@@ -41,7 +41,13 @@ function Read-JsonObject {
 
     $resolved = (Resolve-Path -LiteralPath $Path).Path
     $raw = Get-Content -LiteralPath $resolved -Raw -Encoding UTF8
-    $value = $raw | ConvertFrom-Json
+    $convertFromJson = Get-Command ConvertFrom-Json
+    if ($convertFromJson.Parameters.ContainsKey('DateKind')) {
+        $value = $raw | ConvertFrom-Json -DateKind String
+    }
+    else {
+        $value = $raw | ConvertFrom-Json
+    }
     if ($null -eq $value -or $value -is [System.Array]) {
         throw "JSON 루트는 객체여야 합니다: $resolved"
     }
@@ -134,9 +140,16 @@ function Test-Manifest {
     }
     if (Test-HasProperty $Manifest 'publishedAtUtc') {
         $publishedAtUtc = [string]$Manifest.publishedAtUtc
-        $parsedDate = [DateTimeOffset]::MinValue
-        if (-not $publishedAtUtc.EndsWith('Z', [StringComparison]::Ordinal) -or
-            -not [DateTimeOffset]::TryParse($publishedAtUtc, [ref]$parsedDate)) {
+        $isValidUtc = $publishedAtUtc.EndsWith('Z', [StringComparison]::Ordinal)
+        if ($isValidUtc) {
+            try {
+                [void][System.Xml.XmlConvert]::ToDateTimeOffset($publishedAtUtc)
+            }
+            catch {
+                $isValidUtc = $false
+            }
+        }
+        if (-not $isValidUtc) {
             Add-ValidationError $errors 'publishedAtUtc는 Z로 끝나는 유효한 UTC ISO 8601 값이어야 합니다.'
         }
     }
