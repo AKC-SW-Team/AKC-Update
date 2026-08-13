@@ -5,9 +5,9 @@
 이 저장소는 설치 파일과 업데이트 메타데이터를 누구나 내려받을 수 있는 공개 저장소로 운영합니다. 공개 읽기 권한은 문제가 없지만 쓰기 권한은 다음처럼 제한합니다.
 
 1. 기본 Actions 권한은 `contents: read`로 설정합니다.
-2. GitHub 조직에 `update-maintainers` 팀을 만들고 실제 Release 담당자 2명 이상만 등록합니다.
+2. CODEOWNERS에는 실제 Release 담당자 `AKC-JHBae`, `AKC-JUChoi` 두 명만 지정합니다.
 3. `main` 브랜치에 Ruleset을 적용해 Pull Request와 CODEOWNERS 승인을 필수로 합니다.
-4. 1인만 등록된 CODEOWNERS에서는 작성자가 자신의 Pull Request를 승인할 수 없어 배포가 잠기므로, 팀 구성 전에는 승인 필수 규칙을 켜지 않습니다.
+4. 작성자는 자신의 Pull Request를 승인할 수 없으므로 반드시 다른 Release 담당자가 승인합니다.
 5. Ruleset에서 강제 푸시와 브랜치 삭제를 금지합니다.
 6. `akc-sms-v*`, `akc-pms-v*` 태그 생성 권한은 Release 담당자 또는 전용 GitHub App으로 제한합니다.
 7. GitHub의 Immutable Releases를 활성화합니다.
@@ -120,7 +120,7 @@ Release가 공개되기 전에는 채널 매니페스트를 활성화하지 않�
 ## 10. 저장소 설정 체크리스트
 
 - [ ] 공개 저장소, 불필요한 외부 Collaborator 없음
-- [ ] `update-maintainers` 팀에 Release 담당자 2명 이상 등록
+- [ ] CODEOWNERS에 `AKC-JHBae`, `AKC-JUChoi` 두 담당자 지정
 - [ ] Actions 기본 권한 `Read repository contents`로 제한
 - [ ] `main` Ruleset: PR 필수
 - [ ] CODEOWNERS 승인 필수, 최신 승인 무효화 활성화
