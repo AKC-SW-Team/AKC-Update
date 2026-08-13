@@ -1,0 +1,7 @@
+{
+  "$schema": "../../../schemas/update-manifest-v1.schema.json",
+  "schemaVersion": 1,
+  "productId": "akc-pms",
+  "channel": "staging",
+  "enabled": false
+}

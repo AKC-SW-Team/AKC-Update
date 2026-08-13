@@ -1,0 +1,105 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/AKC-SW-Team/AKC-Update/main/schemas/update-manifest-v1.schema.json",
+  "title": "AKC update manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "productId",
+    "channel",
+    "enabled"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "productId": {
+      "enum": [
+        "akc-sms",
+        "akc-pms"
+      ]
+    },
+    "channel": {
+      "enum": [
+        "stable",
+        "staging"
+      ]
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"
+    },
+    "mandatory": {
+      "type": "boolean"
+    },
+    "releaseNotes": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 10000
+    },
+    "publishedAtUtc": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$"
+    },
+    "installer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fileName",
+        "url",
+        "size",
+        "sha256"
+      ],
+      "properties": {
+        "fileName": {
+          "type": "string",
+          "pattern": "^AKC-(SMS|PMS)-Setup-(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.exe$"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://github\\.com/AKC-SW-Team/AKC-Update/releases/download/akc-(sms|pms)-v[^/]+/AKC-(SMS|PMS)-Setup-[^/]+\\.exe$"
+        },
+        "size": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "enabled": {
+            "const": true
+          }
+        },
+        "required": [
+          "enabled"
+        ]
+      },
+      "then": {
+        "required": [
+          "version",
+          "mandatory",
+          "releaseNotes",
+          "publishedAtUtc",
+          "installer"
+        ]
+      }
+    }
+  ]
+}

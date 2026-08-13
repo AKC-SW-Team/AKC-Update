@@ -1,0 +1,8 @@
+# GitHub 조직에 update-maintainers 팀을 만들고 실제 Release 담당자 2명 이상만 등록합니다.
+* @AKC-SW-Team/update-maintainers
+
+/.github/ @AKC-SW-Team/update-maintainers
+/products/ @AKC-SW-Team/update-maintainers
+/schemas/ @AKC-SW-Team/update-maintainers
+/scripts/ @AKC-SW-Team/update-maintainers
+/docs/ @AKC-SW-Team/update-maintainers
