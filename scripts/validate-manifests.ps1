@@ -136,7 +136,11 @@ function Test-Manifest {
         $publishedAtUtc = [string]$Manifest.publishedAtUtc
         $parsedDate = [DateTimeOffset]::MinValue
         if (-not $publishedAtUtc.EndsWith('Z', [StringComparison]::Ordinal) -or
-            -not [DateTimeOffset]::TryParse($publishedAtUtc, [ref]$parsedDate)) {
+            -not [DateTimeOffset]::TryParse(
+                $publishedAtUtc,
+                [Globalization.CultureInfo]::InvariantCulture,
+                [Globalization.DateTimeStyles]::RoundtripKind,
+                [ref]$parsedDate)) {
             Add-ValidationError $errors 'publishedAtUtc는 Z로 끝나는 유효한 UTC ISO 8601 값이어야 합니다.'
         }
     }
