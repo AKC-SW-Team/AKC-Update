@@ -3,5 +3,15 @@
   "schemaVersion": 1,
   "productId": "akc-sms",
   "channel": "stable",
-  "enabled": false
+  "enabled": true,
+  "version": "1.0.1.1",
+  "mandatory": true,
+  "releaseNotes": "최초 배포: 일정·Task 조회, 담당자·소속 필터, Task 변경 이력 및 안전한 자동 업데이트 지원",
+  "publishedAtUtc": "2026-08-13T07:07:17.7616688Z",
+  "installer": {
+    "fileName": "AKC-SMS-Setup-1.0.1.1.exe",
+    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.1/AKC-SMS-Setup-1.0.1.1.exe",
+    "size": 156563703,
+    "sha256": "5e41b616c57e50608ac0d3a84bcaff67d07fed7a2a8b06cfc7e1d2e6fb22db14"
+  }
 }
