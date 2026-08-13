@@ -134,13 +134,16 @@ function Test-Manifest {
     }
     if (Test-HasProperty $Manifest 'publishedAtUtc') {
         $publishedAtUtc = [string]$Manifest.publishedAtUtc
-        $parsedDate = [DateTimeOffset]::MinValue
-        if (-not $publishedAtUtc.EndsWith('Z', [StringComparison]::Ordinal) -or
-            -not [DateTimeOffset]::TryParse(
-                $publishedAtUtc,
-                [Globalization.CultureInfo]::InvariantCulture,
-                [Globalization.DateTimeStyles]::RoundtripKind,
-                [ref]$parsedDate)) {
+        $isValidUtc = $publishedAtUtc.EndsWith('Z', [StringComparison]::Ordinal)
+        if ($isValidUtc) {
+            try {
+                [void][System.Xml.XmlConvert]::ToDateTimeOffset($publishedAtUtc)
+            }
+            catch {
+                $isValidUtc = $false
+            }
+        }
+        if (-not $isValidUtc) {
             Add-ValidationError $errors 'publishedAtUtc는 Z로 끝나는 유효한 UTC ISO 8601 값이어야 합니다.'
         }
     }
