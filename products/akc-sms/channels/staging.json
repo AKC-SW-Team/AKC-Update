@@ -3,5 +3,15 @@
   "schemaVersion": 1,
   "productId": "akc-sms",
   "channel": "staging",
-  "enabled": false
+  "enabled": true,
+  "version": "1.0.1.4",
+  "mandatory": true,
+  "releaseNotes": "Task 댓글 게시판 및 시작 시 업데이트 확인 설정 추가",
+  "publishedAtUtc": "2026-08-18T01:19:39Z",
+  "installer": {
+    "fileName": "AKC-SMS-Setup-1.0.1.4.exe",
+    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.4/AKC-SMS-Setup-1.0.1.4.exe",
+    "size": 156572399,
+    "sha256": "32a1f9456cb74556906dae3199ed8f3a32eebeaff9761cd17ea9102a2c24cb8c"
+  }
 }
