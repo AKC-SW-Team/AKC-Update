@@ -41,7 +41,11 @@ function Read-JsonObject {
 
     $resolved = (Resolve-Path -LiteralPath $Path).Path
     $raw = Get-Content -LiteralPath $resolved -Raw -Encoding UTF8
-    $value = $raw | ConvertFrom-Json
+    $convertFromJsonArguments = @{}
+    if ((Get-Command ConvertFrom-Json).Parameters.ContainsKey('DateKind')) {
+        $convertFromJsonArguments['DateKind'] = 'String'
+    }
+    $value = $raw | ConvertFrom-Json @convertFromJsonArguments
     if ($null -eq $value -or $value -is [System.Array]) {
         throw "JSON 루트는 객체여야 합니다: $resolved"
     }
