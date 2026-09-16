@@ -4,14 +4,14 @@
   "productId": "akc-sms",
   "channel": "stable",
   "enabled": true,
-  "version": "1.0.1.4",
+  "version": "1.0.1.5",
   "mandatory": true,
-  "releaseNotes": "Task 댓글 게시판 및 시작 시 업데이트 확인 설정 추가",
-  "publishedAtUtc": "2026-08-18T01:19:39Z",
+  "releaseNotes": "Simple Calendar 및 하위 캘린더, Task 함께 보기, 주말 날짜 색상, Done/Pending 표시·2주 필터 추가",
+  "publishedAtUtc": "2026-09-16T06:51:27Z",
   "installer": {
-    "fileName": "AKC-SMS-Setup-1.0.1.4.exe",
-    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.4/AKC-SMS-Setup-1.0.1.4.exe",
-    "size": 156572399,
-    "sha256": "32a1f9456cb74556906dae3199ed8f3a32eebeaff9761cd17ea9102a2c24cb8c"
+    "fileName": "AKC-SMS-Setup-1.0.1.5.exe",
+    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.5/AKC-SMS-Setup-1.0.1.5.exe",
+    "size": 156586780,
+    "sha256": "cc4455476cf4edb93f497f3aa449dc3c0a116da12d77f8f72681b852bff696eb"
   }
 }
