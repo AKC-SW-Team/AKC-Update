@@ -4,14 +4,14 @@
   "productId": "akc-sms",
   "channel": "stable",
   "enabled": true,
-  "version": "1.0.1.4",
+  "version": "1.0.1.6",
   "mandatory": true,
-  "releaseNotes": "Task 댓글 게시판 및 시작 시 업데이트 확인 설정 추가",
-  "publishedAtUtc": "2026-08-18T01:19:39Z",
+  "releaseNotes": "완료/Pending 개별 Task 우클릭 숨김·복원 및 사용자별 숨김 저장 (Simple Calendar 포함)",
+  "publishedAtUtc": "2026-09-17T00:33:38.2259901Z",
   "installer": {
-    "fileName": "AKC-SMS-Setup-1.0.1.4.exe",
-    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.4/AKC-SMS-Setup-1.0.1.4.exe",
-    "size": 156572399,
-    "sha256": "32a1f9456cb74556906dae3199ed8f3a32eebeaff9761cd17ea9102a2c24cb8c"
+    "fileName": "AKC-SMS-Setup-1.0.1.6.exe",
+    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.6/AKC-SMS-Setup-1.0.1.6.exe",
+    "size": 156589160,
+    "sha256": "18f7b274273084c7f32feab884527986d79b79a677f289b80e9824c463bab0d7"
   }
 }

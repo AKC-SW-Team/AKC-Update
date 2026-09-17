@@ -6,8 +6,8 @@
 
 1. 기본 Actions 권한은 `contents: read`로 설정합니다.
 2. CODEOWNERS에는 실제 Release 담당자 `AKC-JHBae`, `AKC-JUChoi` 두 명만 지정합니다.
-3. `main` 브랜치에 Ruleset을 적용해 Pull Request와 CODEOWNERS 승인을 필수로 합니다.
-4. 작성자는 자신의 Pull Request를 승인할 수 없으므로 반드시 다른 Release 담당자가 승인합니다.
+3. `main` 브랜치에 Ruleset을 적용해 Pull Request와 매니페스트 자동 검증을 필수로 합니다.
+4. 2026-09-17 운영자 승인에 따라 SMS·PMS 모두 타인 승인, CODEOWNERS 승인 및 최종 푸시 승인을 필수로 요구하지 않습니다. 권한 있는 배포 담당자가 검증 통과 후 병합할 수 있습니다.
 5. Ruleset에서 강제 푸시와 브랜치 삭제를 금지합니다.
 6. `akc-sms-v*`, `akc-pms-v*` 태그 생성 권한은 Release 담당자 또는 전용 GitHub App으로 제한합니다.
 7. GitHub의 Immutable Releases를 활성화합니다.
@@ -100,14 +100,14 @@ Release가 공개되기 전에는 채널 매니페스트를 활성화하지 않�
 1. 대상 제품의 `products/<productId>/channels/staging.json`을 후보 매니페스트로 갱신합니다.
 2. `channel`을 `staging`으로 설정하고 `$schema` 상대 경로를 유지합니다.
 3. Pull Request를 만들고 `Validate update metadata` 검사를 통과시킵니다.
-4. CODEOWNER 승인을 받은 뒤 병합합니다.
+4. 자동 검증 통과와 미해결 검토 의견 처리를 확인한 뒤 배포 담당자가 병합합니다.
 5. staging 채널을 사용하는 테스트 PC에서 다운로드, SHA-256, Authenticode, UAC 설치, 재시작 후 버전을 확인합니다.
 
 ## 8. stable 승격
 
 1. staging 검증이 끝난 동일 Release 정보를 `products/<productId>/channels/stable.json`에 반영합니다.
 2. `channel`만 `stable`로 설정합니다.
-3. 별도의 Pull Request와 CODEOWNER 승인을 거쳐 병합합니다.
+3. 별도의 Pull Request에서 자동 검증 통과와 미해결 검토 의견 처리를 확인한 뒤 병합합니다.
 4. 일반 사용자 PC 한 대에서 업데이트 성공을 확인한 뒤 배포 상황을 모니터링합니다.
 
 ## 9. 중지 및 복구
@@ -123,7 +123,7 @@ Release가 공개되기 전에는 채널 매니페스트를 활성화하지 않�
 - [ ] CODEOWNERS에 `AKC-JHBae`, `AKC-JUChoi` 두 담당자 지정
 - [ ] Actions 기본 권한 `Read repository contents`로 제한
 - [ ] `main` Ruleset: PR 필수
-- [ ] CODEOWNERS 승인 필수, 최신 승인 무효화 활성화
+- [x] 타인 필수 승인 해제, PR·자동 검증·미해결 검토 의견 처리 요구 유지
 - [ ] `Validate manifests` 상태 검사 필수
 - [ ] 강제 푸시 및 삭제 금지
 - [ ] `akc-sms-v*`, `akc-pms-v*` 태그 생성 권한 제한
