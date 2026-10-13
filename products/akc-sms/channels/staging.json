@@ -4,14 +4,14 @@
   "productId": "akc-sms",
   "channel": "staging",
   "enabled": true,
-  "version": "1.0.1.8",
+  "version": "1.0.1.9",
   "mandatory": true,
-  "releaseNotes": "마지막 프로젝트·말머리 저장 및 Task 상세 상단 저장·닫기 버튼 고정",
-  "publishedAtUtc": "2026-10-13T01:09:41Z",
+  "releaseNotes": "Task 상세 상단 재구성 및 공통 테마·큰 글꼴 가독성 개선",
+  "publishedAtUtc": "2026-10-13T01:31:54Z",
   "installer": {
-    "fileName": "AKC-SMS-Setup-1.0.1.8.exe",
-    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.8/AKC-SMS-Setup-1.0.1.8.exe",
-    "size": 156591041,
-    "sha256": "145889b1dfb0ec01e71898b691ce64d7b29ec86e8cd403b4a62ae524773badb7"
+    "fileName": "AKC-SMS-Setup-1.0.1.9.exe",
+    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.9/AKC-SMS-Setup-1.0.1.9.exe",
+    "size": 156592555,
+    "sha256": "c2bf1a4bf79ca929c8d0ea51289f81101dda0ee53ef0cf97b16f22c7ab5896db"
   }
 }
