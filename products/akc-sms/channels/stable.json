@@ -4,14 +4,14 @@
   "productId": "akc-sms",
   "channel": "stable",
   "enabled": true,
-  "version": "1.0.1.7",
+  "version": "1.0.1.8",
   "mandatory": true,
-  "releaseNotes": "캘린더 제목 표시 수정 및 사용자별 마지막 Task 등록 제목 자동 입력",
-  "publishedAtUtc": "2026-10-13T00:20:54Z",
+  "releaseNotes": "마지막 프로젝트·말머리 저장 및 Task 상세 상단 저장·닫기 버튼 고정",
+  "publishedAtUtc": "2026-10-13T01:09:41Z",
   "installer": {
-    "fileName": "AKC-SMS-Setup-1.0.1.7.exe",
-    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.7/AKC-SMS-Setup-1.0.1.7.exe",
-    "size": 156590599,
-    "sha256": "ac10ac6d7cf8c1eb847099c59684e7543a12c97e76bd352b1b74f5d4ce590edb"
+    "fileName": "AKC-SMS-Setup-1.0.1.8.exe",
+    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.8/AKC-SMS-Setup-1.0.1.8.exe",
+    "size": 156591041,
+    "sha256": "145889b1dfb0ec01e71898b691ce64d7b29ec86e8cd403b4a62ae524773badb7"
   }
 }
