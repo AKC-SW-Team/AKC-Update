@@ -4,14 +4,14 @@
   "productId": "akc-sms",
   "channel": "staging",
   "enabled": true,
-  "version": "1.0.1.9",
+  "version": "1.0.1.10",
   "mandatory": true,
-  "releaseNotes": "Task 상세 상단 재구성 및 공통 테마·큰 글꼴 가독성 개선",
-  "publishedAtUtc": "2026-10-13T01:31:54Z",
+  "releaseNotes": "Windows SMS 디자인·큰 글꼴 가독성 개선 및 권한 회귀 검증 정비",
+  "publishedAtUtc": "2026-10-19T10:37:59Z",
   "installer": {
-    "fileName": "AKC-SMS-Setup-1.0.1.9.exe",
-    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.9/AKC-SMS-Setup-1.0.1.9.exe",
-    "size": 156592555,
-    "sha256": "c2bf1a4bf79ca929c8d0ea51289f81101dda0ee53ef0cf97b16f22c7ab5896db"
+    "fileName": "AKC-SMS-Setup-1.0.1.10.exe",
+    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.10/AKC-SMS-Setup-1.0.1.10.exe",
+    "size": 156593394,
+    "sha256": "96b186a0553b0fa958bc8bfbe79b50513ee77e54f4948e741bbb64c544491f31"
   }
 }
