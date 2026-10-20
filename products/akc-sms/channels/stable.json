@@ -4,14 +4,14 @@
   "productId": "akc-sms",
   "channel": "stable",
   "enabled": true,
-  "version": "1.0.1.10",
+  "version": "1.0.1.11",
   "mandatory": true,
-  "releaseNotes": "Windows SMS 디자인·큰 글꼴 가독성 개선 및 권한 회귀 검증 정비",
-  "publishedAtUtc": "2026-10-19T10:37:59Z",
+  "releaseNotes": "Task Board 카드 압축, 정보 재배치 및 제목 영역 여백 조정",
+  "publishedAtUtc": "2026-10-20T00:47:29Z",
   "installer": {
-    "fileName": "AKC-SMS-Setup-1.0.1.10.exe",
-    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.10/AKC-SMS-Setup-1.0.1.10.exe",
-    "size": 156593394,
-    "sha256": "96b186a0553b0fa958bc8bfbe79b50513ee77e54f4948e741bbb64c544491f31"
+    "fileName": "AKC-SMS-Setup-1.0.1.11.exe",
+    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.11/AKC-SMS-Setup-1.0.1.11.exe",
+    "size": 156593550,
+    "sha256": "1bad03e9cb43a91b2a7828cad72d6576c2f881371d4f9aed16d62d716fa57408"
   }
 }
