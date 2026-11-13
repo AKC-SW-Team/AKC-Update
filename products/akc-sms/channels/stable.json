@@ -4,14 +4,14 @@
   "productId": "akc-sms",
   "channel": "stable",
   "enabled": true,
-  "version": "1.0.1.11",
+  "version": "1.0.1.12",
   "mandatory": true,
-  "releaseNotes": "Task Board 카드 압축, 정보 재배치 및 제목 영역 여백 조정",
-  "publishedAtUtc": "2026-10-20T00:47:29Z",
+  "releaseNotes": "Daily 할 일 팝업, 요약 정보 일괄 등록 및 제목 클릭 상세 보기 추가",
+  "publishedAtUtc": "2026-11-13T00:42:59Z",
   "installer": {
-    "fileName": "AKC-SMS-Setup-1.0.1.11.exe",
-    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.11/AKC-SMS-Setup-1.0.1.11.exe",
-    "size": 156593550,
-    "sha256": "1bad03e9cb43a91b2a7828cad72d6576c2f881371d4f9aed16d62d716fa57408"
+    "fileName": "AKC-SMS-Setup-1.0.1.12.exe",
+    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.12/AKC-SMS-Setup-1.0.1.12.exe",
+    "size": 156704272,
+    "sha256": "5ca2df69d09a649348c519003c5a546f0e182b4c61b81e82e264d125b3acae24"
   }
 }
