@@ -4,14 +4,14 @@
   "productId": "akc-sms",
   "channel": "stable",
   "enabled": true,
-  "version": "1.0.1.12",
+  "version": "1.0.1.13",
   "mandatory": true,
-  "releaseNotes": "Daily 할 일 팝업, 요약 정보 일괄 등록 및 제목 클릭 상세 보기 추가",
-  "publishedAtUtc": "2026-11-13T00:42:59Z",
+  "releaseNotes": "Daily 아이콘 메뉴, 창 구성 기억, 한 줄 바로 등록 및 보류 제외 개선",
+  "publishedAtUtc": "2026-11-13T04:49:59Z",
   "installer": {
-    "fileName": "AKC-SMS-Setup-1.0.1.12.exe",
-    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.12/AKC-SMS-Setup-1.0.1.12.exe",
-    "size": 156704272,
-    "sha256": "5ca2df69d09a649348c519003c5a546f0e182b4c61b81e82e264d125b3acae24"
+    "fileName": "AKC-SMS-Setup-1.0.1.13.exe",
+    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.13/AKC-SMS-Setup-1.0.1.13.exe",
+    "size": 156705414,
+    "sha256": "5e90bf323b8a0028dcc44f2b528df1c01145dcc3934b86ced3efeb15add959c1"
   }
 }
