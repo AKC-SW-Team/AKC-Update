@@ -4,14 +4,14 @@
   "productId": "akc-sms",
   "channel": "stable",
   "enabled": true,
-  "version": "1.0.1.14",
+  "version": "1.0.1.15",
   "mandatory": true,
-  "releaseNotes": "Daily 화면 확장·상태 필터, 프로그램 시작 시 팝업 설정 및 간단 등록 말머리 선택 추가",
-  "publishedAtUtc": "2026-11-13T10:09:19Z",
+  "releaseNotes": "Daily 입력 행·추가 버튼 정렬, 날짜 선택 컨트롤 및 메인 화면 동반 최소화·복원 개선",
+  "publishedAtUtc": "2026-11-16T06:33:52Z",
   "installer": {
-    "fileName": "AKC-SMS-Setup-1.0.1.14.exe",
-    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.14/AKC-SMS-Setup-1.0.1.14.exe",
-    "size": 156706690,
-    "sha256": "98518bf58f509f32706e35b71fdcfd623dcbf770d265e1ff2948c1c2e8bd8e26"
+    "fileName": "AKC-SMS-Setup-1.0.1.15.exe",
+    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.15/AKC-SMS-Setup-1.0.1.15.exe",
+    "size": 156707192,
+    "sha256": "9477356be5ab7d2c80c2bafca53b3d508ab4dcc4379e92ca3f66d926687db933"
   }
 }
