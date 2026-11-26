@@ -4,7 +4,7 @@ AKC SMS와 AKC PMS의 공개 업데이트 메타데이터 및 GitHub Release 배
 
 - 다운로드(읽기)는 공개합니다.
 - 매니페스트 변경과 Release 게시(쓰기)는 승인된 배포 담당자만 수행합니다.
-- 설치 비밀번호 대신 Windows UAC, Authenticode 코드 서명, SHA-256 검증을 사용합니다.
+- 설치 권한은 Windows UAC로 관리합니다. **SMS는 미서명 설치 파일**을 배포하며 공식 Release 자산의 크기와 SHA-256을 검증합니다. PMS는 기존대로 Authenticode 코드 서명과 SHA-256을 검증합니다.
 - 모든 채널은 최초 배포 전까지 `enabled: false`입니다.
 
 ## 저장소 구조
