@@ -4,14 +4,14 @@
   "productId": "akc-sms",
   "channel": "staging",
   "enabled": true,
-  "version": "1.0.1.17",
+  "version": "1.0.1.18",
   "mandatory": true,
-  "releaseNotes": "수주 현황 PDF·PowerPoint 내보내기, 단계별 월별 납기 차트와 일정 건수, 출하 납기 및 수주 통합 일정표 개선. SMS 미서명 설치 파일입니다.",
-  "publishedAtUtc": "2026-11-26T08:05:12Z",
+  "releaseNotes": "수주 통합 일정표 월·분기 라디오 버튼, 단계·고객사·사업장·수량 및 수주일·HW·SW·검수·출하 일정 정렬. SMS 미서명 설치 파일입니다.",
+  "publishedAtUtc": "2026-11-27T01:36:47Z",
   "installer": {
-    "fileName": "AKC-SMS-Setup-1.0.1.17.exe",
-    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.17/AKC-SMS-Setup-1.0.1.17.exe",
-    "size": 160130508,
-    "sha256": "e2cbf91246ecb6f714d3f02d544adbf9f41c1976c317a3013cbafb3c69e5a4b9"
+    "fileName": "AKC-SMS-Setup-1.0.1.18.exe",
+    "url": "https://github.com/AKC-SW-Team/AKC-Update/releases/download/akc-sms-v1.0.1.18/AKC-SMS-Setup-1.0.1.18.exe",
+    "size": 160134522,
+    "sha256": "dede7890882e8aab36831ea4e1077fce12085a3f7eaee0b3a9239cc74fdbabe7"
   }
 }
